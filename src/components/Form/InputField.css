@@ -1,0 +1,40 @@
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  transition: border 0.3s ease;
+}
+
+input[type="submit"] {
+  display: block;
+  background-color: #1666df;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  box-shadow: 1px 1px 10px 1px #1666df;
+  transform: scale(1.1);
+  background-color: white;
+  color: #1666df;
+}
+
+input.error {
+  border: 2px solid red;
+  background-color: #fdd;
+}
+
+.error-message {
+  color: red;
+  transition: color 0.3s ease;
+  height: 30%;
+  width: 100%;
+}
