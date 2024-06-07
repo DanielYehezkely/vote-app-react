@@ -1,7 +1,11 @@
 import React, { useState } from "react";
-import './FormPage.css';
+
 import InputField from "../../components/Form/InputField";
 import { useCheckUser } from "../../context/CheckUserContext";
+
+
+import './FormPage.css';
+import Loader from "../../components/Loader/Loader";
 
 const FormPage = () => {
   const [email, setEmail] = useState('');
@@ -11,8 +15,12 @@ const FormPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("Form submitted");
     await checkUserCredentials(email, password);
+    console.log("isLoading after submit:", isLoading);
   };
+
+  console.log("FormPage rendered with isLoading:", isLoading);
 
   return (
     <div className="FormPage page">
@@ -34,7 +42,7 @@ const FormPage = () => {
             error={error}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <input type="submit" value="Let me in!" disabled={isLoading} />
+          {isLoading ? <Loader/> : <input type="submit" value="Let me in!" />}
         </form>
       </div>
     </div>

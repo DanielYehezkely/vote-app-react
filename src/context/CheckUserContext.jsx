@@ -15,7 +15,6 @@ export const CheckUserProvider = ({ children }) => {
     setError(null);
 
     try {
-      setIsLoading(true);
       const response = await axios(USERS_URL);
       const users = response.data;
       console.log(users);

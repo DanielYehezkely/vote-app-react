@@ -9,11 +9,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  z-index: 999;
+  background-color: white;
+  position: relative;
+}
+
+.FormPage {
+  background: url(/assets/images/publicdomainq-japanese_katana_sword_samurai.png) no-repeat center center;
+  background-size: contain;
+  z-index: -10;
 }
 
 .form-container span {
   font-size: 3rem;
   font-weight: bold;
+  text-shadow: 1px 1px 7px  rgb(255, 0, 0);
 }
 
 .form-container h1 {

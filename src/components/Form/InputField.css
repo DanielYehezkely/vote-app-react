@@ -10,7 +10,7 @@ input[type="password"] {
 
 input[type="submit"] {
   display: block;
-  background-color: #1666df;
+  background-color: #5a1e1e;
   color: white;
   padding: 15px 30px;
   border: none;
@@ -21,10 +21,10 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  box-shadow: 1px 1px 10px 1px #1666df;
+  box-shadow: 1px 1px 10px 1px #5a1e1e;
   transform: scale(1.1);
   background-color: white;
-  color: #1666df;
+  color: #5a1e1e;
 }
 
 input.error {
