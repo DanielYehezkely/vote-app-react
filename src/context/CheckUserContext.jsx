@@ -27,7 +27,7 @@ export const CheckUserProvider = ({ children }) => {
       const user = users.find(user => {
         const userEmail = user.email.trim().toLowerCase();
         const inputEmail = email.trim().toLowerCase();
-        const userPassword = String(user.password).trim();
+        const userPassword = String(user.password).trim(); 
         const inputPassword = password.trim();
         return userEmail === inputEmail && userPassword === inputPassword;
       });
@@ -51,16 +51,16 @@ export const CheckUserProvider = ({ children }) => {
 
   return (
     <CheckUserContext.Provider value={{
-      checkUserCredentials,
-      isLoading,
-      error,
-      loggedUserName,
-      loggedUserId,
-      isAdmin,
-      userVoted,
-      setUserVoted,
-      userVotedCandidateId,
-      setUserVotedCandidateId
+      checkUserCredentials, 
+      isLoading, 
+      error, 
+      loggedUserName, 
+      loggedUserId, 
+      isAdmin, 
+      userVoted, 
+      setUserVoted, 
+      userVotedCandidateId, 
+      setUserVotedCandidateId 
     }}>
       {children}
     </CheckUserContext.Provider>
