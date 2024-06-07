@@ -1,0 +1,33 @@
+.CandidateCard {
+  height: 100%;
+  width: 24%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.CandidateCard:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.CandidateCard h2 {
+  font-size: 2rem;
+}
+
+.candidate-image{
+  width: 99%;
+  height: 70%;
+}
+
+.vote-button {
+  transition: all 0.3s ease;
+}
+
+.vote-button:hover{
+   transform: scale(1.2);
+}
+
