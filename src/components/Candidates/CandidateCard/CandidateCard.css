@@ -9,9 +9,10 @@
   gap: 3rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  position: relative;
 }
 .CandidateCard:hover {
-  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  transform: scale(1.07);
 }
 
 .CandidateCard h2 {
@@ -23,11 +24,26 @@
   height: 70%;
 }
 
-.vote-button {
-  transition: all 0.3s ease;
+.vote-display {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
-.vote-button:hover{
-   transform: scale(1.2);
+
+.confirm-button {
+  background-color: #28a745; /* Green */
+  color: white;
 }
 
+.cancel-button {
+  background-color: #dc3545; /* Red */
+  color: white;
+}
+
+.change-vote-button {
+  background-color: #17a2b8; /* Teal */
+  color: white;
+}

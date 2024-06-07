@@ -1,6 +1,6 @@
 .user-button-container {
   position: relative;
-  display: inline-block; /* Ensures the container wraps its content properly */
+  display: inline-block; 
 }
 
 .btn {
@@ -11,14 +11,20 @@
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.432);
   cursor: pointer;
   font-weight: bold;
-  white-space: nowrap; /* Prevent text wrapping */
+  white-space: nowrap;
+}
+
+
+.btn:hover {
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.596);
+  background-color: rgba(247, 161, 63, 0.788);
 }
 
 .btn-light {
   color: rgb(255, 160, 52);
   background-color: white;
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.87);
-  transition: all 0.3s ease; /* Smooth transition for all properties */
+  transition: all 0.3s ease; 
 }
 
 .btn-light:hover {
@@ -33,11 +39,6 @@
   justify-content: center;
   gap: 1rem;
   transition: all 0.3s ease;
-}
-
-.UserButton:hover {
-  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.596);
-  background-color: rgba(247, 161, 63, 0.788);
 }
 
 .user-sub-buttons {
