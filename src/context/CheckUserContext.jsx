@@ -10,6 +10,7 @@ export const CheckUserProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
   const [loggedUserName, setLoggedUserName] = useState('');
+  const [isAdmin, setIsAdmin] = useState(false);
 
   const checkUserCredentials = async (email, password) => {
     setIsLoading(true);
@@ -18,7 +19,6 @@ export const CheckUserProvider = ({ children }) => {
     try {
       const response = await axios(USERS_URL);
       const users = response.data;
-      console.log(users);
       if (response.status !== 200) {
         throw new Error('error occurred')
       }
@@ -33,6 +33,7 @@ export const CheckUserProvider = ({ children }) => {
       setLoggedUserName(user.name)
 
       if (user) {
+        setIsAdmin(user.type === 'admin');
         setCurrentPage("voting");
         return ;
       } else {
@@ -50,7 +51,7 @@ export const CheckUserProvider = ({ children }) => {
   };
 
   return (
-    <CheckUserContext.Provider value={{ checkUserCredentials, isLoading, error, loggedUserName }}>
+    <CheckUserContext.Provider value={{ checkUserCredentials, isLoading, error, loggedUserName, isAdmin }}>
       {children}
     </CheckUserContext.Provider>
   );

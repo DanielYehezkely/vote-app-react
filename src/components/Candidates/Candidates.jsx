@@ -11,7 +11,7 @@ const Candidates = () => {
     <h1>Vote For the best Anime </h1>
   <main className="Candidates">
       {CANDIDATES_DATA.map(candidate => 
-      <CandidateCard name={candidate.name} image={candidate.image}/>
+      <CandidateCard name={candidate.name} image={candidate.image} key={candidate.id}/>
       )}
   </main>
     </>
