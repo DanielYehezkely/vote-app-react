@@ -9,6 +9,7 @@ export const CheckUserProvider = ({ children }) => {
   const { setCurrentPage } = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [loggedUserName, setLoggedUserName] = useState('');
 
   const checkUserCredentials = async (email, password) => {
     setIsLoading(true);
@@ -29,6 +30,8 @@ export const CheckUserProvider = ({ children }) => {
         return userEmail === inputEmail && userPassword === inputPassword;
       });
 
+      setLoggedUserName(user.name)
+
       if (user) {
         setCurrentPage("voting");
         return ;
@@ -47,7 +50,7 @@ export const CheckUserProvider = ({ children }) => {
   };
 
   return (
-    <CheckUserContext.Provider value={{ checkUserCredentials, isLoading, error }}>
+    <CheckUserContext.Provider value={{ checkUserCredentials, isLoading, error, loggedUserName }}>
       {children}
     </CheckUserContext.Provider>
   );

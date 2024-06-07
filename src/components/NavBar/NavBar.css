@@ -1,0 +1,13 @@
+.NavBar {
+  width: 100%;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.562);
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@font-face {
+            font-family: 'logoFont'; 
+            src: url('/public/assets/fonts/Merienda-Regular.ttf') format('truetype'); 
+        }
+

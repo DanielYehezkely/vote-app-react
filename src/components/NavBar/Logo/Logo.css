@@ -1,0 +1,15 @@
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'logoFont', sans-serif;
+}
+
+.logo-icon img {
+  width: 5%;
+  
+}
+
+.logo span {
+  text-shadow: 1px 1px 6px red;
+  font-size: 3.6rem;
+}
