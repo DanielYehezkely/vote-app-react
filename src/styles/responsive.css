@@ -52,8 +52,12 @@
       gap: 2rem;
     }
 
-    .CandidateCard h2{
+    .CandidateCard button {
       font-size: 1.6rem;
+    }
+
+    .CandidateCard h2{
+      font-size: 2rem;
     }
 
     .candidate-image{
@@ -62,6 +66,10 @@
 
     .CandidateCard:hover {
       transform: none;
+    }
+
+    .vote-display{
+      font-size: 1.6rem;
     }
 }
 
