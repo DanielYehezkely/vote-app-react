@@ -11,7 +11,6 @@ const NavBar = () => {
   return (
     <nav className="NavBar">
       <Logo />
-
       <UserButton />
     </nav>
   )
