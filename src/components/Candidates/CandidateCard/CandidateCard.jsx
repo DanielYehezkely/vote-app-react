@@ -11,7 +11,7 @@ const CandidateCard = ({ name, image, votes, showingConfirmation, handleVote, ha
       <div className="vote-buttons-container">
         {showingConfirmation ? (
           <>
-            <p>Are you sure?</p>
+            <p >Are you sure?</p>
             <button className="btn confirm-button" onClick={handleConfirmVote}>Yes</button>
             <button className="btn cancel-button" onClick={handleCancelVote}>No</button>
           </>

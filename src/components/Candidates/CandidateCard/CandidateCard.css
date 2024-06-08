@@ -32,18 +32,31 @@
   font-weight: bold;
 }
 
+.vote-buttons-container {
+  width: 50%;
+  height: 15%;
+  text-align: center;
+}
+.vote-buttons-container p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.vote-buttons-container button{
+  margin: 1px 5px 1px 1px;
+}
 
 .confirm-button {
-  background-color: #28a745; /* Green */
+  background-color: #28a745; 
   color: white;
 }
 
 .cancel-button {
-  background-color: #dc3545; /* Red */
+  background-color: #dc3545; 
   color: white;
 }
 
 .change-vote-button {
-  background-color: #17a2b8; /* Teal */
+  background-color: #17a2b8; 
   color: white;
 }
