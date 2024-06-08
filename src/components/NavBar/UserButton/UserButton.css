@@ -1,6 +1,7 @@
 .user-button-container {
   position: relative;
-  display: inline-block; 
+  display: flex;
+  gap: 1rem; 
 }
 
 .btn {

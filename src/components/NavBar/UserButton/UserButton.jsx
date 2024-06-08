@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import { useCheckUser } from "../../../context/CheckUserContext";
 import { useNavigate } from "../../../context/NavigationContext";
+import ThemeToggle from '../ThemeComponent/ThemeComponent'
 
 import './UserButton.css';
 
@@ -27,7 +28,9 @@ const UserButton = () => {
   }
 
   return (
+    <>
     <div className="user-button-container">
+      <ThemeToggle />
       <button className="UserButton btn" onClick={handleUserButtonClick}>
         <i className="fa-solid fa-user-ninja"></i>
         <span>{loggedUserName}</span>
@@ -49,6 +52,7 @@ const UserButton = () => {
         )}
       </div>
     </div>
+    </>
   );
 };
 
