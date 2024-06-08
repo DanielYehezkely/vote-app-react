@@ -4,7 +4,7 @@ const NavigationContext = createContext();
 
 export const NavigationProvider = ({ children }) => {
 
-  const [currentPage, setCurrentPage] = useState('form');
+  const [currentPage, setCurrentPage] = useState('voting');
 
 
   return <NavigationContext.Provider value={{currentPage, setCurrentPage}}  >

@@ -8,12 +8,14 @@ import axios from 'axios';
 const VotingContext = createContext();
 
 export const VotingProvider = ({ children }) => {
+  const [isLoadingCandidates, setIsLoadingCandidates] = useState(false);
   const [candidates, setCandidates] = useState([]);
   const { loggedUserId, userVoted, setUserVoted, userVotedCandidateId, setUserVotedCandidateId } = useCheckUser(); 
 
   useEffect(() => {
     const fetchCandidates = async () => {
       try {
+        setIsLoadingCandidates(true)
         const response = await axios.get(`${VOTES_URL}`);
         const candidatesData = response.data.map(candidate => ({
           ...candidate,
@@ -22,6 +24,8 @@ export const VotingProvider = ({ children }) => {
         setCandidates(candidatesData);
       } catch (error) {
         console.error('Error fetching candidates from MockAPI:', error);
+      } finally {
+        setIsLoadingCandidates(false)
       }
     };
 
@@ -59,14 +63,13 @@ export const VotingProvider = ({ children }) => {
           votes: candidates.find(candidate => candidate.id === id).votes + 1
         });
 
-        // Update the user's vote status in MockAPI
         await axios.put(`${USERS_URL}/${loggedUserId}`, {
           vote: true,
-          votedCandidateId: id // Save the candidate the user voted for
+          votedCandidateId: id 
         });
 
-        setUserVoted(true); // Prevent further voting
-        setUserVotedCandidateId(id); // Track the candidate the user voted for
+        setUserVoted(true); 
+        setUserVotedCandidateId(id); 
       } catch (error) {
         console.error('Error updating vote in MockAPI:', error);
       }
@@ -97,10 +100,9 @@ export const VotingProvider = ({ children }) => {
           votes: candidates.find(candidate => candidate.id === userVotedCandidateId).votes - 1
         });
 
-        // Allow the user to vote again by resetting their vote status in MockAPI
         await axios.put(`${USERS_URL}/${loggedUserId}`, {
           vote: false,
-          votedCandidateId: null // Clear the candidate they voted for
+          votedCandidateId: null 
         });
 
         setUserVoted(false);
@@ -118,7 +120,8 @@ export const VotingProvider = ({ children }) => {
         handleVoteClick,
         handleConfirmVote,
         handleCancelVote,
-        handleChangeVote
+        handleChangeVote,
+        isLoadingCandidates
       }}
     >
       {children}

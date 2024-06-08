@@ -1,4 +1,3 @@
-// CheckUserContext.js
 import { createContext, useState, useContext, useEffect } from "react";
 import { useNavigate } from "./NavigationContext";
 import { USERS_URL } from "../models/api";
@@ -13,8 +12,8 @@ export const CheckUserProvider = ({ children }) => {
   const [loggedUserName, setLoggedUserName] = useState('');
   const [loggedUserId, setLoggedUserId] = useState(null);
   const [isAdmin, setIsAdmin] = useState(false);
-  const [userVoted, setUserVoted] = useState(false); // Track if the user has voted
-  const [userVotedCandidateId, setUserVotedCandidateId] = useState(null); // Track the candidate the user voted for
+  const [userVoted, setUserVoted] = useState(false); 
+  const [userVotedCandidateId, setUserVotedCandidateId] = useState(null); 
 
   const checkUserCredentials = async (email, password) => {
     setIsLoading(true);
@@ -36,8 +35,8 @@ export const CheckUserProvider = ({ children }) => {
         setLoggedUserName(user.name);
         setLoggedUserId(user.id);
         setIsAdmin(user.type === 'admin');
-        setUserVoted(user.vote); // Check if the user has voted
-        setUserVotedCandidateId(user.votedCandidateId); // Track the candidate they voted for
+        setUserVoted(user.vote); 
+        setUserVotedCandidateId(user.votedCandidateId); 
         setCurrentPage("voting");
       } else {
         setError("One of the data you typed is incorrect.");

@@ -25,7 +25,7 @@ const Candidates = () => {
             handleConfirmVote={() => handleConfirmVote(candidate.id)}
             handleCancelVote={handleCancelVote}
             handleChangeVote={handleChangeVote}
-            userVotedCandidateId={userVotedCandidateId} // Pass the user's voted candidate ID
+            userVotedCandidateId={userVotedCandidateId} 
           />
         ))}
       </main>
