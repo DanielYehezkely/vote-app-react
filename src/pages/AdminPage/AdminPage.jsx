@@ -11,7 +11,9 @@ const AdminPage = () => {
     <>
       <div className="page admin-page">
         <NavBar />
+        <h1>Users Status</h1>
         <AdminUsersTable />
+        <h1>Candidates Status</h1>
         <Chart />
       </div>
     </>
