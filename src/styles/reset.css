@@ -11,16 +11,14 @@ html {
 }
 
 @font-face {
-            font-family: 'JapanFont'; 
-            src: url('/public/assets/fonts/NotoSerifJP-Regular.ttf') format('truetype'); 
-        }
-
-
+  font-family: "JapanFont";
+  src: url("/public/assets/fonts/NotoSerifJP-Regular.ttf") format("truetype");
+}
 
 body {
   font-weight: 400;
   line-height: 1.6;
-  font-family: 'JapanFont', sans-serif;
+  font-family: "JapanFont", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -42,5 +40,3 @@ ul {
 a {
   text-decoration: none;
 }
-
-

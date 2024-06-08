@@ -1,7 +1,7 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
 
 import { VOTES_URL, USERS_URL } from '../models/api';
-import { useCheckUser } from './CheckUserContext';  
+import { useCheckUser } from './CheckUserContext';
 
 import axios from 'axios';
 
@@ -11,7 +11,7 @@ export const VotingProvider = ({ children }) => {
   const [isLoadingCandidates, setIsLoadingCandidates] = useState(false);
   const [error, setError] = useState(null);
   const [candidates, setCandidates] = useState([]);
-  const { loggedUserId, userVoted, setUserVoted, userVotedCandidateId, setUserVotedCandidateId } = useCheckUser(); 
+  const { loggedUserId, userVoted, setUserVoted, userVotedCandidateId, setUserVotedCandidateId } = useCheckUser();
 
   useEffect(() => {
     const fetchCandidates = async () => {
@@ -66,11 +66,11 @@ export const VotingProvider = ({ children }) => {
 
         await axios.put(`${USERS_URL}/${loggedUserId}`, {
           vote: true,
-          votedCandidateId: id 
+          votedCandidateId: id
         });
 
-        setUserVoted(true); 
-        setUserVotedCandidateId(id); 
+        setUserVoted(true);
+        setUserVotedCandidateId(id);
       } catch (error) {
         setError(error.message)
       }
@@ -103,7 +103,7 @@ export const VotingProvider = ({ children }) => {
 
         await axios.put(`${USERS_URL}/${loggedUserId}`, {
           vote: false,
-          votedCandidateId: null 
+          votedCandidateId: null
         });
 
         setUserVoted(false);

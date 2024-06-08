@@ -15,14 +15,14 @@ import { ThemeProvider } from './theme/ThemeContext.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
 
   <React.StrictMode>
-  <ThemeProvider>
-  <NavigationProvider>
-  <CheckUserProvider>
-  <VotingProvider>
-    <App />
-  </VotingProvider>
-  </CheckUserProvider>
-  </NavigationProvider>
-  </ThemeProvider>
+    <ThemeProvider>
+      <NavigationProvider>
+        <CheckUserProvider>
+          <VotingProvider>
+            <App />
+          </VotingProvider>
+        </CheckUserProvider>
+      </NavigationProvider>
+    </ThemeProvider>
   </React.StrictMode>,
 )

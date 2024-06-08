@@ -1,5 +1,6 @@
 
 import React from "react";
+
 import './CandidateCard.css';
 
 const CandidateCard = ({ name, image, votes, showingConfirmation, handleVote, handleConfirmVote, handleCancelVote, handleChangeVote, userVotedCandidateId, id }) => {

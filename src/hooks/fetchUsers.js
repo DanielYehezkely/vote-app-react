@@ -8,7 +8,7 @@ const useFetchUsers = () => {
   const [users, setUsers] = useState([]);
   const [isLoadingUsers, setIsLoadingUsers] = useState(false);
   const [error, setError] = useState(null);
-  
+
   useEffect(() => {
 
     const fetchUsers = async () => {
@@ -24,10 +24,10 @@ const useFetchUsers = () => {
       };
     }
     fetchUsers();
-   
+
   }, []);
 
-  return {users, isLoadingUsers, error}
+  return { users, isLoadingUsers, error }
 };
 
 export default useFetchUsers;

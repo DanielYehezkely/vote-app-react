@@ -1,9 +1,11 @@
 .FormPage {
-  background: url(/assets/images/publicdomainq-japanese_katana_sword_samurai.png) no-repeat center center;
+  background: url(/assets/images/publicdomainq-japanese_katana_sword_samurai.png)
+    no-repeat center center;
   background-size: contain;
   z-index: -10;
   justify-content: center;
 }
+
 .form-container {
   width: 30%;
   height: 60vh;
@@ -23,7 +25,7 @@
 .form-container span {
   font-size: 3rem;
   font-weight: bold;
-  text-shadow: 1px 1px 7px  rgb(255, 0, 0);
+  text-shadow: 1px 1px 7px rgb(255, 0, 0);
 }
 
 .form-container h1 {

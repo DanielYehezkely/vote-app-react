@@ -5,7 +5,7 @@ import VotingPage from "./pages/VotingPage/VotingPage"
 
 
 function App() {
-  
+
   const { currentPage } = useNavigate();
 
   switch (currentPage) {
@@ -18,7 +18,7 @@ function App() {
     default:
       return <FormPage />;
   }
-  
+
 }
 
 export default App

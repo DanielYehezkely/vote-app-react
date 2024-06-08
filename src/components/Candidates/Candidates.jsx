@@ -1,7 +1,9 @@
 import React from "react";
+
 import CandidateCard from "./CandidateCard/CandidateCard";
 import { useVoting } from "../../context/VotingContext";
 import { useCheckUser } from "../../context/CheckUserContext";
+
 import './Candidates.css';
 
 const Candidates = () => {

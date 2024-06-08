@@ -1,7 +1,9 @@
 .CandidateCard {
   height: 100%;
   width: 24%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,7 +21,7 @@
   font-size: 2rem;
 }
 
-.candidate-image{
+.candidate-image {
   width: 99%;
   height: 70%;
 }
@@ -42,21 +44,21 @@
   font-weight: bold;
 }
 
-.vote-buttons-container button{
+.vote-buttons-container button {
   margin: 1px 5px 1px 1px;
 }
 
 .confirm-button {
-  background-color: #28a745; 
+  background-color: #28a745;
   color: white;
 }
 
 .cancel-button {
-  background-color: #dc3545; 
+  background-color: #dc3545;
   color: white;
 }
 
 .change-vote-button {
-  background-color: #17a2b8; 
+  background-color: #17a2b8;
   color: white;
 }

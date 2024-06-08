@@ -82,7 +82,7 @@
     font-weight: 600;
     padding: 0.5rem;
   }
-   
+
   .chart-section {
     width: 85%;
   }
@@ -143,35 +143,34 @@
   }
 }
 
-
 @media only screen and (min-width: 1700px) {
- .form-container span{
-  font-size: 5rem;
- }
- .form-container h1{
-  font-size: 5rem;
- }
+  .form-container span {
+    font-size: 5rem;
+  }
+  .form-container h1 {
+    font-size: 5rem;
+  }
 
- .form-container{
-  padding-top: 2rem;
-  justify-content: center;
-  gap: 7rem;
- }
+  .form-container {
+    padding-top: 2rem;
+    justify-content: center;
+    gap: 7rem;
+  }
 
- label{
-  font-size: 2.5rem;
- }
+  label {
+    font-size: 2.5rem;
+  }
 
   .NavBar {
     height: 8vh;
   }
 
   .logo {
-   font-size: 4rem;
+    font-size: 4rem;
   }
 
   .logo span {
-   font-size: 5rem;
+    font-size: 5rem;
   }
 
   .ThemeButton {
@@ -179,7 +178,7 @@
   }
 
   .UserButton {
-   font-size: 2rem;
+    font-size: 2rem;
   }
 
   .user-sub-buttons button {
@@ -214,4 +213,3 @@
     font-size: 2rem;
   }
 }
-

@@ -3,14 +3,14 @@ import { createContext, useState, useContext, useEffect } from "react";
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState('light'); 
+  const [theme, setTheme] = useState('light');
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
   };
 
   useEffect(() => {
-    document.body.className = theme; 
+    document.body.className = theme;
   }, [theme]);
 
   return (

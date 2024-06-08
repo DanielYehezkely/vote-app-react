@@ -25,7 +25,7 @@ const FormPage = () => {
 
         <form id="form" className="form" onSubmit={handleSubmit}>
           <InputField
-            id="email"  
+            id="email"
             label="Email"
             name="email"
             type="email"
@@ -33,7 +33,7 @@ const FormPage = () => {
             onChange={(e) => setEmail(e.target.value)}
           />
           <InputField
-            id="password"  
+            id="password"
             label="Password"
             name="password"
             type="password"

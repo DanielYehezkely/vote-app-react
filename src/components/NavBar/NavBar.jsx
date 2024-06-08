@@ -10,9 +10,9 @@ const NavBar = () => {
 
   return (
     <nav className="NavBar">
-      <Logo/>
-      
-      <UserButton/>
+      <Logo />
+
+      <UserButton />
     </nav>
   )
 };

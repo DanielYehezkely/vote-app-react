@@ -1,4 +1,3 @@
-
 import './AdminPage.css'
 
 import NavBar from '../../components/NavBar/NavBar'

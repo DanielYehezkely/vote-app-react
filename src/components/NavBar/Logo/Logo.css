@@ -1,14 +1,13 @@
 .logo {
   font-size: 3rem;
   font-weight: bold;
-  font-family: 'logoFont', sans-serif;
+  font-family: "logoFont", sans-serif;
   width: 30%;
   cursor: pointer;
 }
 
 .logo-icon img {
   width: 7%;
-  
 }
 
 .logo span {

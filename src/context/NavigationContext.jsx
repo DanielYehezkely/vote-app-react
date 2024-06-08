@@ -7,7 +7,7 @@ export const NavigationProvider = ({ children }) => {
   const [currentPage, setCurrentPage] = useState('form');
 
 
-  return <NavigationContext.Provider value={{currentPage, setCurrentPage}}  >
+  return <NavigationContext.Provider value={{ currentPage, setCurrentPage }}  >
     {children}
   </NavigationContext.Provider>
 }
