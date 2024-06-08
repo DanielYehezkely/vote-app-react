@@ -12,7 +12,7 @@ const VotingPage = () => {
   const { isLoadingCandidates } = useVoting();
 
   return (
-    <div className=" page VotingPage">
+    <div className="page VotingPage">
       <NavBar />
       {isLoadingCandidates ? <Loader /> : <Candidates />}
     </div>

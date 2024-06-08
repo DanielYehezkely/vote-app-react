@@ -10,6 +10,8 @@
   .NavBar {
     flex-direction: column;
     height: 20vh;
+    position: fixed; 
+    top: 0;
   }
 
   .logo {
