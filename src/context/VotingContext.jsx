@@ -9,6 +9,7 @@ const VotingContext = createContext();
 
 export const VotingProvider = ({ children }) => {
   const [isLoadingCandidates, setIsLoadingCandidates] = useState(false);
+  const [error, setError] = useState(null);
   const [candidates, setCandidates] = useState([]);
   const { loggedUserId, userVoted, setUserVoted, userVotedCandidateId, setUserVotedCandidateId } = useCheckUser(); 
 
@@ -23,7 +24,7 @@ export const VotingProvider = ({ children }) => {
         }));
         setCandidates(candidatesData);
       } catch (error) {
-        console.error('Error fetching candidates from MockAPI:', error);
+        setError(error.message)
       } finally {
         setIsLoadingCandidates(false)
       }
@@ -71,7 +72,7 @@ export const VotingProvider = ({ children }) => {
         setUserVoted(true); 
         setUserVotedCandidateId(id); 
       } catch (error) {
-        console.error('Error updating vote in MockAPI:', error);
+        setError(error.message)
       }
     }
   };
@@ -108,7 +109,7 @@ export const VotingProvider = ({ children }) => {
         setUserVoted(false);
         setUserVotedCandidateId(null);
       } catch (error) {
-        console.error('Error updating vote in MockAPI:', error);
+        setError(error.message)
       }
     }
   };
@@ -121,7 +122,8 @@ export const VotingProvider = ({ children }) => {
         handleConfirmVote,
         handleCancelVote,
         handleChangeVote,
-        isLoadingCandidates
+        isLoadingCandidates,
+        error
       }}
     >
       {children}

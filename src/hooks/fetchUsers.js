@@ -7,6 +7,7 @@ const useFetchUsers = () => {
 
   const [users, setUsers] = useState([]);
   const [isLoadingUsers, setIsLoadingUsers] = useState(false);
+  const [error, setError] = useState(null);
   
   useEffect(() => {
 
@@ -17,7 +18,7 @@ const useFetchUsers = () => {
         const usersData = response.data;
         setUsers(usersData);
       } catch (error) {
-        throw new Error(error.message)
+        setError(error.message)
       } finally {
         setIsLoadingUsers(false)
       };
@@ -26,7 +27,7 @@ const useFetchUsers = () => {
    
   }, []);
 
-  return {users, isLoadingUsers}
+  return {users, isLoadingUsers, error}
 };
 
 export default useFetchUsers;

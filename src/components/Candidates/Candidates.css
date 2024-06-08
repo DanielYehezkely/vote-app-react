@@ -1,4 +1,4 @@
-.Candidates{
+.Candidates {
   width: 90%;
   height: 70vh;
   display: flex;
@@ -6,3 +6,5 @@
   justify-content: center;
   gap: 2rem;
 }
+
+

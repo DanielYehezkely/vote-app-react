@@ -1,4 +1,4 @@
-// CandidateCard.js
+
 import React from "react";
 import './CandidateCard.css';
 
