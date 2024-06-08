@@ -2,18 +2,18 @@
 import './AdminPage.css'
 
 import NavBar from '../../components/NavBar/NavBar'
-import AdminUsersTable from '../../components/AdminUsersTable/AdminUsersTable';
+import AdminUsersTable from '../../components/Admin/AdminUsersTable/AdminUsersTable'
+import Chart from '../../components/Admin/AdminChart/Chart';
+
 
 const AdminPage = () => {
   return (
     <>
       <div className="page admin-page">
-    <NavBar/>
-    <AdminUsersTable/>
-    <section className='chart-section'>
-      
-    </section>
-    </div>
+        <NavBar />
+        <AdminUsersTable />
+        <Chart />
+      </div>
     </>
   );
 };

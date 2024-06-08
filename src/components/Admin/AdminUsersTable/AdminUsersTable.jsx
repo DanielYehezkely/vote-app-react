@@ -1,6 +1,6 @@
 import React from "react";
-import useFetchUsers from "../../hooks/fetchUsers";
-import Loader from '../../components/Loader/Loader';
+import useFetchUsers from "../../../hooks/fetchUsers";
+import Loader from '../../Loader/Loader';
 
 import './AdminUsersTable.css';
 
