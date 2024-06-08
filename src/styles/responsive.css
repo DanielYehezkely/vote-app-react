@@ -10,28 +10,30 @@
 
   .NavBar {
     flex-direction: column;
-    height: 15vh;
+    height: 20vh;
   }
 
   .logo {
-    width: 50%;
-    font-size: 2.2rem;
+    width: 100%;
+    font-size: 2.6rem;
+    text-align: center;
+    height: 10%;
   }
 
   .logo-icon img {
-    width: 20%;
+    width: 10%;
   }
 
   .logo span {
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
 
   .ThemeButton {
-    font-size: 100%;
+    font-size: 110%;
   }
 
   .UserButton {
-    font-size: 100%;
+    font-size: 110%;
   }
 
   .user-sub-buttons button {
