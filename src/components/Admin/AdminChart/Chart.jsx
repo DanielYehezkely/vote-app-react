@@ -3,12 +3,13 @@ import React from "react";
 import { Chart as ChartJS } from 'chart.js/auto';
 import { Bar } from 'react-chartjs-2';
 
+import Loader from "../../Loader/Loader";
 import { useVoting } from "../../../context/VotingContext";
 
 import './Chart.css';
 
 const Chart = () => {
-  const { candidates } = useVoting();
+  const { candidates, isLoadingCandidates } = useVoting();
 
   if (!candidates || candidates.length === 0) return <p>No data available</p>;
   const totalVotes = candidates.reduce((sum, candidate) => sum + candidate.votes, 0);
@@ -45,11 +46,14 @@ const Chart = () => {
   };
 
   return (
-    <section className='chart-section'>
-      <h2>Candidate Votes </h2>
-      <h3>Total Votes: {totalVotes}</h3>
-      <Bar data={data} />
-    </section>
+    <>
+      {isLoadingCandidates ? <Loader /> :
+        (<section className='chart-section'>
+          <h2>Candidate Votes </h2>
+          <h3>Total Votes: {totalVotes}</h3>
+          <Bar data={data} />
+        </section>)}
+    </>
   );
 };
 
