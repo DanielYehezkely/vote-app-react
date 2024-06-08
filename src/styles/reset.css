@@ -26,11 +26,13 @@ body {
 body.light {
   --background-color: #ffffff;
   --text-color: #000000;
+  
 }
 
 body.dark {
   --background-color: #333333;
   --text-color: #ffffff;
+  
 }
 
 ul {
