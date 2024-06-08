@@ -1,6 +1,10 @@
-# React Voting Application 
+# React Voting Application  <img src="/public/assets/icons/favicon.ico" alt="App Icon" width="40" height="40"> 
 
-
+| Username       | Password    |
+| -------------- | ----------- |
+|admin - 'daniel@example.com'          | 6431 | 
+|user - 'elad@example.com'        | 7623 |
+|user - 'jimmy@example.com'        | 2422   |
 
 ## Table of Contents
 
