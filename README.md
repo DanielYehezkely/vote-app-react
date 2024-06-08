@@ -18,6 +18,7 @@
 8. [Known Bugs](#known-bugs)
 9. [Review](#review)
 10. [Links](#links)
+11. [Screenshots](#screenshots)
 
 ## Overview
 
@@ -139,7 +140,7 @@ This project was a significant learning experience in React development, particu
 
 ---
 
-### Screenshots
+## Screenshots
 
 
 
