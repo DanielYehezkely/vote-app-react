@@ -1,145 +1,149 @@
 /* Extra small devices (phones, less than 576px) */
 @media only screen and (max-width: 575.98px) {
-    html {
-      font-size: 70%;
-    }
-    .form-container {
-      width: 80%;
-      height: 90vh;
-    }
+  html {
+    font-size: 70%;
+  }
+  .form-container {
+    width: 80%;
+    height: 70vh;
+  }
 
-    .NavBar {
-      flex-direction: column;
-      height: 15vh;
-    }
+  .NavBar {
+    flex-direction: column;
+    height: 15vh;
+  }
 
-    .logo{
-      width: 50%;
-      font-size: 2.2rem;
-    }
+  .logo {
+    width: 50%;
+    font-size: 2.2rem;
+  }
 
-    .logo-icon img{
-      width: 20%;
-    }
+  .logo-icon img {
+    width: 20%;
+  }
 
-    .logo span{
-      font-size: 2rem;
-    }
+  .logo span {
+    font-size: 2rem;
+  }
 
-    .ThemeButton{
-      font-size: 100%;
-    }
+  .ThemeButton {
+    font-size: 100%;
+  }
 
-    .UserButton {
-      font-size: 100%;
-    }
+  .UserButton {
+    font-size: 100%;
+  }
 
-    .user-sub-buttons button{
-      font-size: 100%;
-    }
-    
-    .VotingPage h1{
-      font-size: 1.4rem;
-    }
+  .user-sub-buttons button {
+    font-size: 100%;
+  }
 
-    .Candidates{
-      display: grid;
-      grid-template-columns: repeat(1 ,1fr);
-    }
-    .CandidateCard{
-      width: 100%;
-      height: 100%;
-      gap: 2rem;
-    }
+  .VotingPage h1 {
+    font-size: 1.4rem;
+  }
 
-    .CandidateCard button {
-      font-size: 1.6rem;
-    }
+  .Candidates {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .CandidateCard {
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+  }
 
-    .CandidateCard h2{
-      font-size: 2rem;
-    }
+  .CandidateCard button {
+    font-size: 1.6rem;
+  }
 
-    .candidate-image{
-      height: 70%;
-    }
+  .CandidateCard h2 {
+    font-size: 2rem;
+  }
 
-    .CandidateCard:hover {
-      transform: none;
-    }
+  .candidate-image {
+    height: 70%;
+  }
 
-    .vote-display{
-      font-size: 1.6rem;
-    }
+  .CandidateCard:hover {
+    transform: none;
+  }
+
+  .vote-display {
+    font-size: 1.6rem;
+  }
+
+  .admin-page h1 {
+    font-size: 1.8rem;
+  }
+
+  th {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 0.5rem;
+  }
+   
+  .chart-section {
+    width: 85%;
+  }
 }
-
 
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  html {
+    font-size: 65%;
+  }
+  .form-container {
+    width: 70%;
+    height: 70vh;
+  }
 
-    html {
-      font-size: 65%;
-    }
-    .form-container {
-      width: 70%;
-      height: 70vh;
-    }
+  .logo {
+    width: 30%;
+    font-size: 2rem;
+  }
 
-    .logo{
-      width: 30%;
-      font-size: 2rem;
-    }
+  .logo-icon img {
+    width: 10%;
+  }
 
-    .logo-icon img{
-      width: 10%;
-    }
+  .logo span {
+    font-size: 2rem;
+  }
 
-    .logo span{
-      font-size: 2rem;
-    }
+  .ThemeButton {
+    font-size: 100%;
+  }
 
-    .ThemeButton{
-      font-size: 100%;
-    }
+  .UserButton {
+    font-size: 100%;
+  }
 
-    .UserButton {
-      font-size: 100%;
-    }
+  .user-sub-buttons button {
+    font-size: 100%;
+  }
 
-    .user-sub-buttons button{
-      font-size: 100%;
-    }
+  .VotingPage h1 {
+    font-size: 1.8rem;
+  }
 
-    .VotingPage h1{
-      font-size: 1.8rem;
-    }
-
-    .Candidates{
-      display: grid;
-      grid-template-columns: repeat(2 ,1fr);
-    }
-    .CandidateCard{
-      width: 100%;
-      gap: 1rem;
-    }
+  .Candidates {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .CandidateCard {
+    width: 100%;
+    gap: 1rem;
+  }
 }
-
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
-    .form-container {
-      width: 50%;
-      height: 70vh;
-    }
-    
-
-
+  .form-container {
+    width: 50%;
+    height: 70vh;
+  }
 }
-
 
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
-   
 }
 
-
 @media only screen and (min-width: 1200px) {
-   
 }

@@ -18,7 +18,7 @@ const AdminUsersTable = () => {
               <p>Oops! Something went wrong: {error}</p>
             </div>
           ) : (
-            <table>
+            <table >
               <thead>
                 <tr>
                   <th>ID</th>
