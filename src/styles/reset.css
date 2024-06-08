@@ -25,6 +25,18 @@ body {
   font-weight: 400;
   line-height: 1.6;
   font-family: 'JapanFont', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+body.light {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+body.dark {
+  --background-color: #333333;
+  --text-color: #ffffff;
 }
 
 ul {

@@ -2,10 +2,11 @@
   font-size: 3rem;
   font-weight: bold;
   font-family: 'logoFont', sans-serif;
+  width: 30%;
 }
 
 .logo-icon img {
-  width: 5%;
+  width: 7%;
   
 }
 

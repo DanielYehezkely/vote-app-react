@@ -4,8 +4,8 @@
   height: 10vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 40%;
+  justify-content: space-around;
+  
 }
 
 @font-face {
