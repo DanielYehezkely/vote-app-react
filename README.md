@@ -77,7 +77,7 @@ To set up and run the project locally, follow these steps:
 
 1. Clone the repository from GitHub.
    - Open your terminal or command prompt.
-   - Run the command: `git clone https://github.com/your-username/react-voting-app.git`
+   - Run the command: `git clone https://github.com/DanielYehezkely/vote-app-react`
 
 2. Navigate to the project directory.
    - Use the command: `cd react-voting-app`
