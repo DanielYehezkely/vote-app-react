@@ -1,0 +1,48 @@
+.users-status {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  background: rgba(195, 231, 241, 0.521);
+  border-radius: 0.25em;
+  border-collapse: collapse;
+  width: 100rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+th {
+  border-bottom: 1px solid #364043;
+  color: #000000;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  text-align: center;
+  
+}
+td {
+  text-align: center;
+  font-weight: 400;
+  padding: 0.65em 1em;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+tbody tr {
+  color: black;
+  transition: all 0.25s ease;
+}
+tbody tr:hover {
+  background: #014055;
+  color: white;
+}
+
+.voted {
+  color: rgb(1, 212, 1);
+  font-weight: bold;
+}
+.not-voted {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+}
