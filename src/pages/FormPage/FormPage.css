@@ -48,3 +48,20 @@ label {
   font-weight: bold;
   font-size: 1.6rem;
 }
+
+.custom-toast {
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.custom-body {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+}
+
+.Toastify__close-button {
+  color: white; 
+}

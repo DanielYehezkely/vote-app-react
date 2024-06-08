@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import InputField from "../../components/Form/InputField";
 import { useCheckUser } from "../../context/CheckUserContext";
 import Loader from "../../components/Loader/Loader";
@@ -14,7 +17,10 @@ const FormPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await checkUserCredentials(email, password);
+    const result = await checkUserCredentials(email, password);
+    if (!result) {
+      toast.error('Failed to log in. Please check your credentials.');
+    } 
   };
 
   return (
@@ -43,6 +49,16 @@ const FormPage = () => {
           {isLoading ? <Loader /> : <input type="submit" value="Let me in!" />}
         </form>
       </div>
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={true}
+        closeOnClick={true}
+        pauseOnHover={true}
+        draggable={false}
+        toastClassName="custom-toast"
+        bodyClassName="custom-body"
+      />
     </div>
   );
 };
