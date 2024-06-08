@@ -8,10 +8,20 @@
   font-weight: bold;
   white-space: nowrap;
   color: white;
+  transition: all 0.3s ease;
 }
 
 .ThemeButton.dark-mode {
   color: rgb(66, 66, 66);
   background-color: #fff;
   box-shadow: 1px 1px 10px 0px rgba(240, 240, 240, 0.61);
+}
+
+.ThemeButton:hover {
+  background-color: rgb(116, 116, 116);
+}
+
+.ThemeButton.dark-mode:hover {
+  background-color: rgb(116, 116, 116);
+  color: #fff;
 }
