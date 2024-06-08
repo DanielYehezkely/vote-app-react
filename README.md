@@ -2,9 +2,9 @@
 
 | Username       | Password    |
 | -------------- | ----------- |
-|admin - 'daniel@example.com'          | 6431 | 
-|user - 'elad@example.com'        | 7623 |
-|user - 'jimmy@example.com'        | 2422   |
+|admin - `daniel@example.com`          | 6431 | 
+|user - `elad@example.com`        | 7623 |
+|user - `jimmy@example.com`        | 2422   |
 
 ## Table of Contents
 
