@@ -41,6 +41,10 @@
     font-size: 100%;
   }
 
+  .VotingPage{
+    padding-top: 25vh;
+  }
+
   .VotingPage h1 {
     font-size: 1.4rem;
   }
@@ -73,6 +77,10 @@
 
   .vote-display {
     font-size: 1.6rem;
+  }
+
+  .admin-page{
+    padding-top: 25vh;
   }
 
   .admin-page h1 {
