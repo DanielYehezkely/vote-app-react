@@ -1,4 +1,3 @@
-/* Extra small devices (phones, less than 576px) */
 @media only screen and (max-width: 575.98px) {
   html {
     font-size: 70%;
@@ -144,8 +143,75 @@
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
-}
 
 @media only screen and (min-width: 1200px) {
+ .form-container span{
+  font-size: 5rem;
+ }
+ .form-container h1{
+  font-size: 5rem;
+ }
+
+ .form-container{
+  padding-top: 2rem;
+  justify-content: center;
+  gap: 7rem;
+ }
+
+ label{
+  font-size: 2.5rem;
+ }
+
+  .NavBar {
+    height: 8vh;
+  }
+
+  .logo {
+   font-size: 4rem;
+  }
+
+  .logo span {
+   font-size: 5rem;
+  }
+
+  .ThemeButton {
+    font-size: 2rem;
+  }
+
+  .UserButton {
+   font-size: 2rem;
+  }
+
+  .user-sub-buttons button {
+    font-size: 1.8rem;
+  }
+
+  .VotingPage h1 {
+    font-size: 3rem;
+  }
+
+  .CandidateCard button {
+    font-size: 2rem;
+  }
+
+  .CandidateCard h2 {
+    font-size: 2.5rem;
+  }
+
+  .vote-display {
+    font-size: 2rem;
+  }
+
+  .admin-page h1 {
+    font-size: 2.5rem;
+  }
+
+  th {
+    font-size: 2rem;
+  }
+
+  td {
+    font-size: 2rem;
+  }
 }
+
